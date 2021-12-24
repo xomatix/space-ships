@@ -10,7 +10,8 @@ export default class Network {
     }
 
     connect() {
-        this.ws = new WebSocket("ws://localhost:3000");
+        //this.ws = new WebSocket("ws://localhost:3000");
+        this.ws = new WebSocket("ws://https://space-sh.herokuapp.com:3000");
         this.ws.addEventListener("open", () => {
             this.s = true;
             console.log('We are connected!');          
