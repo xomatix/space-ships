@@ -2,7 +2,7 @@ const WebSocket = require('ws');
 
 var p = process.env.PORT || 3000;
 const wss = new WebSocket.Server({ port: p });
-console.log('port:',p)
+console.log('port:',p," , ",process.env.PORT)
 
 var clients = [];
 
