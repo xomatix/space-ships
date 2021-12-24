@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space shooter</title>
+
+    <style>
+        html {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        #gameArea {
+            border-radius: 2.5%;
+            transform-origin: left top;
+            
+        }
+        @media all and (max-width: 800px) {
+            #gameArea {
+             margin-left: 5%;
+            }
+        }
+        .main-content {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Strona testowana serwerowa</h1>
+    <p id='fps'>0</p>
+
+
+    <input id='inputText' type="text" placeholder="Treść wiadomości"></input><button id="check">💪</button>
+    <br>
+    <br>
+
+    <div class="main-content">
+        <canvas id="gameArea" width='800' height='800'></canvas>
+    </div>
+
+    <script src='r.js'></script>
+    <script type="module" src="./game.js"></script>
+    <script>
+
+        /*const ws = new WebSocket("ws://localhost:8082");
+
+        
+
+        ws.addEventListener("open", () => {
+            console.log('We are connected!');
+            
+            document.getElementById("check").addEventListener("click",  () => {
+                var msg = document.getElementById("inputText").value;
+
+                console.log(msg);
+
+                ws.send(msg);
+            });
+            
+            ws.addEventListener("message", ({ data }) => {
+                console.log(JSON.parse(data));
+            });
+
+        });*/
+
+        
+        
+
+    </script>
+</body>
+</html>
