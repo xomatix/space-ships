@@ -25,7 +25,7 @@ wss.on('connection', ws => {
 
     ws.on('message', data => {
         data = JSON.parse(data);
-        console.log(data);
+        //console.log(data);
         /*console.log(`Clients list ${clients.findIndex(user => {
             return user == ws;
         })}`); */
